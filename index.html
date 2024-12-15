@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="intro">
+        <div class="intro-content">
+          <div class="intro-left">
+            <h3>Hi, I'm</h3>
+            <h1>Irfan Fadilah Rafif</h1>
+            <h2>(a.k.a. SphenicPotato)</h2>
+            <p>Computer Science student and <strong>Game Developer</strong>.</p>
+            <div class="buttons">
+              <!-- <button onclick="scrollToSection('about')">About Me</button>
+              <button onclick="scrollToSection('projects')">My Work</button> -->
+              <div class="button-wrapper">
+                <button class="scale-button" onclick="scrollToSection('about-me')">
+                    <span class="scale-text">About Me</span>
+                    <span class="scale-bg"></span>
+                </button>
+            </div>
+            <div class="button-wrapper" onclick="scrollToSection('projects')">
+                <button class="scale-button">
+                    <span class="scale-text">Projects</span>
+                    <span class="scale-bg"></span>
+                </button>
+            </div>
+            <div class="button-wrapper" onclick="scrollToSection('certificates')">
+                <button class="scale-button">
+                    <span class="scale-text">Certificates</span>
+                    <span class="scale-bg"></span>
+                </button>
+            </div>
+            <div class="button-wrapper" onclick="scrollToSection('contact')">
+                <button class="scale-button">
+                    <span class="scale-text">Contact</span>
+                    <span class="scale-bg"></span>
+                </button>
+            </div>
+            </div>
+          </div>
+          <div class="intro-right">
+            <div class="right-overlay"></div>
+            <div class="profile-image">
+              <img src="me3.jpg" alt="Your Profile">
+            </div>
+            <div class="icon-image">
+              <img src="SphenicPotato.png" alt="Your Icon">
+            </div>
+          </div>
+        </div>
+
+        <!-- Hamburger menu for small screens -->
+        <div class="hamburger-menu">
+            <button id="menu-toggle">
+            ☰
+            </button>
+        </div>
+
+        <!-- Side Navbar -->
+        <div id="side-navbar" class="side-navbar">
+            <button class="close-btn" id="close-nav">&times;</button>
+            <ul>
+            <li><a href="#about-me" onclick="scrollToSection('about')">About Me</a></li>
+            <li><a href="#projects">My Work</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+      </section>
+      
+      
+    <main>
+        <!-- About Me Section -->
+        <section id="about-me" class="section">
+            <h2>About Me</h2>
+            <p>I’m <strong>Irfan Fadilah Rafif</strong>, a Computer Science student at Universitas Gadjah Mada with a strong passion for game development. I enjoy creating immersive and engaging gameplay mechanics. My experience spans working with tools like Unity, developing custom systems for games, and crafting unique game ideas for game jams. <br><br>
+
+                I’ve had the honor of winning awards for some of my games, which are the main highlights of my portfolio. Beyond that, I’ve worked on smaller projects that showcase my skills in programming, design, and problem-solving. <br><br>
+                
+                What I love about game development: <br><br>
+                
+                Designing creative gameplay systems. <br>
+                Exploring the technical side, from physics to shader. <br>
+                Blending art, technology, and storytelling into unique experiences. <br><br>
+                I use <strong>Unity</strong> as my primary game engine, leveraging its versatility to create
+                engaging and dynamic projects. While <strong>C#</strong> is my go-to programming language,
+                I also know <strong>Java</strong> to a certain extent, which helps me adapt to various development needs.
+                For game development purposes, I am quite familiar with <strong>Blender</strong> and <strong>Photoshop</strong>, which I use for
+                creating and refining 3D models, textures, and other visual assets to enhance the overall game design.<br><br>
+                In addition to games, I also explores a bit about AI and web, combining my technical background with creativity to bring ideas to life. <br><br>
+                
+                Feel free to explore my portfolio and see the projects I’ve worked on. If you'd want, don’t hesitate to reach out!</p>
+        </section>
+
+        <hr class="divider">
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="game-grid">
+                <div class="game">
+                    <div class="media">
+                        <img src="https://placehold.co/600x400" alt="Game 1">
+                        <img src="animated-webp-supported.webp" alt="Game 1 Animation" class="hover-media">
+                    </div>
+                    <h3>Game 1</h3>
+                    <p>3rd place at GameToday 2023</p>
+                </div>
+                <div class="game">
+                    <div class="media">
+                        <img src="https://placehold.co/600x400" alt="Game 2">
+                        <img src="animated-webp-supported.webp" alt="Game 2 Animation" class="hover-media">
+                    </div>
+                    <h3>Game 2</h3>
+                    <p>Sponsor's favorite at Global Game Jam 2024 Yogyakarta</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="other-projects" class="section">
+            <div class="game-grid">
+                <div class="game">
+                    <div class="media">
+                        <img src="https://placehold.co/600x400" alt="Game 3">
+                        <img src="animated-webp-supported.webp" alt="Game 3 Animation" class="hover-media">
+                    </div>
+                    <h3>Game 3</h3>
+                </div>
+                <div class="game">
+                    <div class="media">
+                        <img src="https://placehold.co/600x400" alt="Game 4">
+                        <img src="animated-webp-supported.webp" alt="Game 4 Animation" class="hover-media">
+                    </div>
+                    <h3>Game 4</h3>
+                </div>
+                <div class="game">
+                    <div class="media">
+                        <img src="https://placehold.co/600x400" alt="Game 5">
+                        <img src="animated-webp-supported.webp" alt="Game 5 Animation" class="hover-media">
+                    </div>
+                    <h3>Game 5</h3>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="section">
+            <h2>Certificates</h2>
+            <div class="certificate-grid">
+                <div class="certificate">
+                    <a href="https://example.com/certificate1" target="_blank">
+                        <img src="https://placehold.co/600x400" alt="Certificate 1">
+                        <h3>Certificate 1</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me on my social platforms:</p>
+            <div class="social-icons">
+                <a href="https://linkedin.com" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <ul class="footer-links">
+            <li><a href="https://github.com/irfanfrafif" target="_blank">GitHub</a></li>
+        </ul>
+        <p>&copy; 2024 Irfan Fadilah Rafif</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
